@@ -34,7 +34,11 @@
                 <div class="container px-3 py-2 p-lg-0">
                     <!-- start logo -->
                     <a class="logo" href="#!" data-scroll-nav="0">
-                        <img src="public/img/logo-light.png" alt="" />
+                        <picture>
+                            <source id="logo-webp" srcset="public/img/logo-light.webp" type="image/webp" />
+                            <source id="logo-png" srcset="public/img/logo-light.png" type="image/png" />
+                            <img id="logo-img" src="public/img/logo-light.png" alt="ДНС Альфа" />
+                        </picture>
                     </a>
                     <!-- end Logo -->
 
@@ -263,9 +267,27 @@
                     <h2>Нас выбрали</h2>
                 </div>
                 <div class="owl-carousel owl-theme clients" id="clients">
-                    <div class="item"><img src="public/img/img.png" alt="..." /></div>
-                    <div class="item"><img src="public/img/img_1.png" alt="..." /></div>
-                    <div class="item"><img src="public/img/img_2.png" alt="..." /></div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="public/img/img.webp" type="image/webp" />
+                            <source srcset="public/img/img.png" type="image/png" />
+                            <img src="public/img/img.png" alt="ДНС Девелопмент" />
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="public/img/img_1.webp" type="image/webp" />
+                            <source srcset="public/img/img_1.png" type="image/png" />
+                            <img src="public/img/img_1.png" alt="ДСК Приморье" />
+                        </picture>
+                    </div>
+                    <div class="item">
+                        <picture>
+                            <source srcset="public/img/img_2.webp" type="image/webp" />
+                            <source srcset="public/img/img_2.png" type="image/png" />
+                            <img src="public/img/img_2.png" alt="ДНС Эксперт" />
+                        </picture>
+                    </div>
                 </div>
             </div>
         </div>

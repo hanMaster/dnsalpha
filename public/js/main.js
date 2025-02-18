@@ -99,16 +99,22 @@ $(function () {
         var bodyScroll = wind.scrollTop(),
             navbar = $('.navbar'),
             navbloglogo = $('.blog-nav .logo> img'),
-            darkbg = $('.bg-black .logo> img'),
-            logo = $('.navbar .logo> img');
+            darkbg = $('.bg-black .logo> img');
+        const logoWebp = document.getElementById('logo-webp');
+        const logoPng = document.getElementById('logo-png');
+        const logoImg = document.getElementById('logo-img');
 
         if (bodyScroll > 100) {
             navbar.addClass('nav-scroll');
-            logo.attr('src', 'public/img/logo-dark.png');
+            logoImg.setAttribute('src', 'public/img/logo-dark.png');
+            logoPng.setAttribute('srcset', 'public/img/logo-dark.png');
+            logoWebp.setAttribute('srcset', 'public/img/logo-dark.webp');
             darkbg.attr('src', 'public/img/logo-light.png');
         } else {
             navbar.removeClass('nav-scroll');
-            logo.attr('src', 'public/img/logo-light.png');
+            logoImg.setAttribute('src', 'public/img/logo-light.png');
+            logoPng.setAttribute('srcset', 'public/img/logo-light.png');
+            logoWebp.setAttribute('srcset', 'public/img/logo-light.webp');
             navbloglogo.attr('src', 'public/img/logo-dark.png');
         }
     });
