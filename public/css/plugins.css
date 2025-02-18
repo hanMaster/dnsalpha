@@ -1,0 +1,11 @@
+/* == bootstrap == */
+@import url('../css/plugins/bootstrap.min.css');
+
+/* == themify icon font == */
+@import url('../css/plugins/themify-icons.css');
+
+/* == owl.carousel == */
+@import url('../css/plugins/owl.carousel.css');
+
+/* == helper classes == */
+@import url('../css/plugins/default.css');

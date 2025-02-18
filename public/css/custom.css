@@ -1,0 +1,39 @@
+.navbar .navbar-nav .nav-link.active {
+    text-decoration: underline;
+}
+
+.shadow-text {
+    overflow: hidden;
+    position: relative;
+    max-height: 100px;
+    transition: max-height 0.7s;
+}
+
+.shadow-text::before {
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 200px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+}
+
+.shadow-toggle {
+    max-height: 1000px !important;
+    overflow: unset !important;
+}
+
+.shadow-toggle::before {
+    height: 0 !important;
+}
+
+.btn-toggle {
+    transform: rotate(180deg) !important;
+}
+
+.shadow-btn {
+    border-radius: 50%;
+    line-height: 2.6;
+}
