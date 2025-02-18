@@ -167,6 +167,9 @@ $(function () {
         --------------------------------------*/
 
     $(document).ready(function () {
+        const year = document.getElementById('year');
+        year.innerText = new Date().getFullYear();
+
         var owl = $('.header .owl-carousel');
 
         // Clients carousel
