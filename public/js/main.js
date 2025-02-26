@@ -207,6 +207,35 @@ $(function () {
             },
         });
 
+        // Tech carousel
+        $('#tech').owlCarousel({
+            loop: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsiveClass: true,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 2,
+                    margin: 20,
+                },
+                768: {
+                    items: 3,
+                    margin: 40,
+                },
+                992: {
+                    items: 3,
+                    margin: 60,
+                },
+                1200: {
+                    items: 3,
+                    margin: 80,
+                },
+            },
+        });
+
         // Default owlCarousel
         $('.owl-carousel').owlCarousel({
             items: 1,

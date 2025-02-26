@@ -37,3 +37,8 @@
     border-radius: 50%;
     line-height: 2.6;
 }
+
+.item {
+    width: 150px;
+    height: auto;
+}
